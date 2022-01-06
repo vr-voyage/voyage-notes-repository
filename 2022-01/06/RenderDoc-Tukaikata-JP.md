@@ -28,18 +28,18 @@ https://docs.unity3d.com/Manual/RenderDocIntegration.html
   3.2 「Connect to App」を選ぶと、その画面が閉めて、メイン画面で新しい「Localhost」のタブが追加現れます。
 4. **Unity**で、「Scene」タブ、また「Game」タブのツールバーの右側で追加されている、円と円弧のアイコンのボタンをクリックすると、**Unity**は一つのフレームを**RenderDoc**に送信します。
 
-![UnityのシーンタブからLoad RenderDocを選んで](../../images/Unity-RenderDoc-0.png)  
-![RenderDocでFile→Attach to Running Instance](../../images/Unity-RenderDoc-1.png)  
-![Remote Host Managerの画面でUnityを選んで、Connect To Appを押して](../../images/Unity-RenderDoc-2.png)  
-![Unityから、Sceneツールバーの右側のボタンをおして、フレームを送信して](../../images/Unity-RenderDoc-3.png)  
-![フレームをダブルクリックして、分析を始まって](../../images/Unity-RenderDoc-4.png)
+![UnityのシーンタブからLoad RenderDocを選んで](/images/Unity-RenderDoc-0.png)  
+![RenderDocでFile→Attach to Running Instance](/images/Unity-RenderDoc-1.png)  
+![Remote Host Managerの画面でUnityを選んで、Connect To Appを押して](/images/Unity-RenderDoc-2.png)  
+![Unityから、Sceneツールバーの右側のボタンをおして、フレームを送信して](/images/Unity-RenderDoc-3.png)  
+![フレームをダブルクリックして、分析を始まって](/images/Unity-RenderDoc-4.png)
 
 それで、RenderDocの「Localhost」タブで、送信されたフレームの画像が追加せれたはずです。  
 画像をダブルクリックしたら、そのフレームの分析が始まります。　　
 ここから、左にある「Event Browser」のパネルに、フレームで実行されていた「DirectX」（またOpenGL）の関数の呼び出しが順番で現れます。  
 加えて「Resource Inspector」のタブで、使用されていた物（オブジェクト、テクスチャ、シェイダー、・・・）を検査できることになります。
 
-![Resource Inspectorのタブから、使用されていた物を検査出来ます](../../images/RenderDoc-Resource-Inspector.png)
+![Resource Inspectorのタブから、使用されていた物を検査出来ます](/images/RenderDoc-Resource-Inspector.png)
 
 # フィルター機能
 
@@ -53,12 +53,12 @@ https://docs.unity3d.com/Manual/RenderDocIntegration.html
 すべての関数呼び出しが見えることになると、スクロールバーが先に選んだ関数に移動しますから、  
 選べている呼び出しから、次の「Draw*」コールをクリックすると、「Pipeline State」のタブで分析できることになります。
 
-![シェイダーの名前を入力すると一覧が関連にする呼び出しに減少されます](../../images/RenderDoc-Kensaku-1.png)
-![名前が見えないなら、一番上の一行で右クリックメして、「Expand All（すべて展開）」を選んで](../../images/RenderDoc-Kensaku-2.png)
-![関数の呼び出しが見えることになるはず](../../images/RenderDoc-Kensaku-3.png)
-![次のドローコールを分析したいなら、フィルターされているアイテムを選んで](../../images/RenderDoc-Kensaku-4.png)
-![フィルターを消して](../../images/RenderDoc-Kensaku-5.png)
-![次のDrawコールを選ぶと、Pipeline Stateのタブで分析でその分析を出来ます](../../images/RenderDoc-Kensaku-6.png)
+![シェイダーの名前を入力すると一覧が関連にする呼び出しに減少されます](/images/RenderDoc-Kensaku-1.png)
+![名前が見えないなら、一番上の一行で右クリックメして、「Expand All（すべて展開）」を選んで](/images/RenderDoc-Kensaku-2.png)
+![関数の呼び出しが見えることになるはず](/images/RenderDoc-Kensaku-3.png)
+![次のドローコールを分析したいなら、フィルターされているアイテムを選んで](/images/RenderDoc-Kensaku-4.png)
+![フィルターを消して](/images/RenderDoc-Kensaku-5.png)
+![次のDrawコールを選ぶと、Pipeline Stateのタブで分析でその分析を出来ます](/images/RenderDoc-Kensaku-6.png)
 
 # テクスチャを確認して
 
@@ -69,8 +69,8 @@ https://docs.unity3d.com/Manual/RenderDocIntegration.html
 
 後は、その画面は閉めるまで「Texture Viewer」のタブに残ります。
 
-![Pixel Shaderフェーズから、使っているテクスチャの一覧を確認できます](../../images/RenderDoc-View-Texture.png)
-![各テクスチャ・アイテムの右にある「→」矢印にクリックすると、選んだテクスチャの検査画面が現れます](../../images/Unity-RenderDoc-7.png)
+![Pixel Shaderフェーズから、使っているテクスチャの一覧を確認できます](/images/RenderDoc-View-Texture.png)
+![各テクスチャ・アイテムの右にある「→」矢印にクリックすると、選んだテクスチャの検査画面が現れます](/images/Unity-RenderDoc-7.png)
 
 # タブを再開する
 

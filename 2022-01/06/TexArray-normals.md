@@ -170,8 +170,8 @@ just look at the **Shader** field inside the **Pipeline State**
 or look at the argument of `VSSetShader` call before the `DrawIndexed`
 call.
 
-![Select texture name set in Unity, from Renderdoc Resource Inspector tab](../../images/Unity-RenderDoc-5.png)
-![View the Pixel Shader information from RenderDoc Pipeline State tab](../../images/Unity-RenderDoc-6.png)
+![Select texture name set in Unity, from Renderdoc Resource Inspector tab](/images/Unity-RenderDoc-5.png)
+![View the Pixel Shader information from RenderDoc Pipeline State tab](/images/Unity-RenderDoc-6.png)
 
 ### Texture comparisons
 
@@ -205,8 +205,8 @@ Now, for the normal textures :
 Alright, there's a clear difference here.  
 Back to the generator then. 
 
-![Inspection of the good normal map from RenderDoc Texture Viewer tab](../../images/Unity-RenderDoc-7.png)
-![Inspection of the bad normal map from RenderDoc Texture Viewer tab](../../images/Unity-RenderDoc-8.png)
+![Inspection of the good normal map from RenderDoc Texture Viewer tab](/images/Unity-RenderDoc-7.png)
+![Inspection of the bad normal map from RenderDoc Texture Viewer tab](/images/Unity-RenderDoc-8.png)
 
 
 When using the following signature :
