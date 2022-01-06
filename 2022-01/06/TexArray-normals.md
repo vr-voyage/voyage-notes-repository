@@ -27,7 +27,6 @@ Texture2DArray array = new Texture2DArray(
     modelTexture.width, modelTexture.height, texturesCount,
     modelTexture.graphicsFormat,
     flags);
-
 ```
 
 This ensures that the texture created have exactly the same
@@ -127,11 +126,11 @@ Double-clicking on this photo loads up all the rendering calls
 information.  
 That's where the fun begins.
 
-![Load RenderDoc button in Unity 'Scene' tab context menu](Unity-RenderDoc-0.png)  
-![Open the 'Remote Host Manager' in RenderDoc](Unity-RenderDoc-1.png)  
-![Connect to Unity from RenderDoc 'Remote Host Manager'](Unity-RenderDoc-2.png)  
-![Use the new button, in Unity Scene toolbar, to send a frame from Unity to RenderDoc](Unity-RenderDoc-3.png)  
-![In RenderDoc, analyse the frame sent by Unity by double-clicking on the newly added image](Unity-RenderDoc-4.png)
+![Load RenderDoc button in Unity 'Scene' tab context menu](/images/Unity-RenderDoc-0.png)  
+![Open the 'Remote Host Manager' in RenderDoc](/images/Unity-RenderDoc-1.png)  
+![Connect to Unity from RenderDoc 'Remote Host Manager'](/images/Unity-RenderDoc-2.png)  
+![Use the new button, in Unity Scene toolbar, to send a frame from Unity to RenderDoc](/images/Unity-RenderDoc-3.png)  
+![In RenderDoc, analyse the frame sent by Unity by double-clicking on the newly added image](/images/Unity-RenderDoc-4.png)
 
 ### Getting the right information
 
@@ -171,8 +170,8 @@ just look at the **Shader** field inside the **Pipeline State**
 or look at the argument of `VSSetShader` call before the `DrawIndexed`
 call.
 
-![Select texture name set in Unity, from Renderdoc Resource Inspector tab](Unity-RenderDoc-5.png)
-![View the Pixel Shader information from RenderDoc Pipeline State tab](Unity-RenderDoc-6.png)
+![Select texture name set in Unity, from Renderdoc Resource Inspector tab](../../images/Unity-RenderDoc-5.png)
+![View the Pixel Shader information from RenderDoc Pipeline State tab](../../images/Unity-RenderDoc-6.png)
 
 ### Texture comparisons
 
@@ -206,8 +205,8 @@ Now, for the normal textures :
 Alright, there's a clear difference here.  
 Back to the generator then. 
 
-![Inspection of the good normal map from RenderDoc Texture Viewer tab](Unity-RenderDoc-7.png)
-![Inspection of the bad normal map from RenderDoc Texture Viewer tab](Unity-RenderDoc-8.png)
+![Inspection of the good normal map from RenderDoc Texture Viewer tab](../../images/Unity-RenderDoc-7.png)
+![Inspection of the bad normal map from RenderDoc Texture Viewer tab](../../images/Unity-RenderDoc-8.png)
 
 
 When using the following signature :
