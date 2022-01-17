@@ -29,9 +29,9 @@ Texture2DArray array = new Texture2DArray(
     flags);
 ```
 
-This ensures that the texture created have exactly the same
-pixel format, which was one of the main reason why the textures
-behaved incorrectly when used as normals.  
+This ensures that created textures have exactly the same
+pixel format, which was one of the main issue when using
+the textures as normal maps.  
 Some textures were generated as SRGB instead of UNORM, and
 vice-versa.
 
@@ -44,12 +44,13 @@ Basically, in shaders, you can define a default "color"
 keyword to texture properties.  
 When doing this, if you do not set a texture to that
 property slot, Unity will generate a 1-pixel wide texture,
-where the pixel will have the same "color".  
-However, while it does that for `2D` textures, for `2DArray`
-textures it will always generate a "grey" one-pixel
-`Texture2DArray` instead.  
+and affect it to this slot. The color of that pixel will be
+the same as the "color" you defined as a default.  
+Well, for `2D` textures that is.  
+For `2DArray` textures it will always generate a "grey"
+one-pixel `Texture2DArray` instead.  
 So, in my case, while both the 2D and 2DArray versions of the
-shader wanted a "white" default texture for the Occlusion
+shader wanted a "white" pixel default texture for the Occlusion
 maps, the 2D version received a "white" texture while the
 2DArray received a "grey" texture, leading to the `2DArray`
 version looking darker.
@@ -66,8 +67,8 @@ I haven't tested that last solution though.
 
 ### The not working version
 
-So, beforehand, I generated the whole `Texture2DArray` using the following
-function :
+So, beforehand, I generated the whole `Texture2DArray` using the
+following function :
 
 ```csharp
 Texture2DArray array = new Texture2DArray(
@@ -181,7 +182,7 @@ by clicking on the right arrow in the **Go** column, at the right of
 its name.
 
 Doing that will open a new sub-tab inside **Texture Viewer**.  
-At the bottom of this tab, inforamtion about the texture format and
+At the bottom of this tab, information about the texture format and
 the number of mipmaps are actually displayed, which was the most
 important information for me.
 
